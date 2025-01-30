@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('BUILD') {
             steps {
-                sh 'docker build -t ashishkumarnerella/currencyservice:v1'
+                sh 'docker build -t ashishkumarnerella/currencyservice:v1 .'
             }
         }
         stage("PUSH") {
